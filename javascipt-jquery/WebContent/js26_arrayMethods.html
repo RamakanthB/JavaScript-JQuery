@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>26 Tutorial</title>
+  <!--methods in an array-->
+</head>
+
+<body>
+  <p1>Array methods</p1>
+  </br>
+  <h4> push is used to add element at the last</h4> </br>
+  <h4> pop is used to remove element at the last</h4> </br>
+  <h4> shift is used to remove element at the first</h4> </br>
+  <h4> unshift is used to add element at the first</h4> </br>
+  <h4> Functions are also Objects in javascript</h4>
+  <pre>
+  <script type="text/javascript">
+
+   var myarray=['anil','kanth','sanjay',10,20,{}];
+   document.writeln('length is '+myarray.length);
+   document.writeln(myarray[5]);
+   document.writeln('after push');
+   myarray.push(100);
+   document.writeln('new length is '+myarray.length);
+   document.writeln(myarray[6]);
+   myarray.pop();
+   document.writeln('after pop length is '+myarray.length);
+   document.writeln(myarray[0]);
+   myarray.shift();
+   document.writeln('length after shift '+myarray.length);
+   document.writeln(myarray[0]);
+   myarray.unshift(400);
+  document.writeln('length after unshift '+myarray.length);
+  document.writeln(myarray[0]);
+</script>
+</pre>
+</body>
+
+</html>

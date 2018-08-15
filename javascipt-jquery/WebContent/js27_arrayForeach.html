@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>27 Tutorial</title>
+  <!--methods in an array-->
+</head>
+
+<body>
+  <p1>Array for Each</p1>
+  </br>
+  <p1>myarray.forEach(function(item,index,array) is used in Js</p1>
+</br>
+  <button onclick=" iterateArray();">Click me</button>
+  <pre>
+  <script type="text/javascript">
+
+
+function iterateArray(){
+  var myarray=['anil','kanth','sanjay',10,20,{}];
+  myarray.forEach(function(item){
+    document.writeln(item);
+    document.writeln('</br>');
+  });
+
+  myarray.forEach(function(item,index){
+    document.writeln(item+index);
+        document.writeln('</br>');
+  });
+
+  myarray.forEach(function(item,index,array){
+    document.writeln(item+index+array);
+        document.writeln('</br>');
+  });
+}
+
+</script>
+</pre>
+</body>
+
+</html>

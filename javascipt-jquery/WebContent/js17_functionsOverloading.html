@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>16 Tutorial</title>
+  <!--functions -->
+</head>
+
+<body>
+  <p1> On page loads we are calling the function </p1>
+  <br>
+  <p1> If there are mutilpe functions with the same name <br> It will call the last method regardless of no of arguments it can accept
+  </p1>
+
+  <pre>
+  <script type="text/javascript">
+
+
+function myfun1(a){
+  alert('1 arg function');
+}
+function myfun1(a,b){
+  alert('2 arg function');
+}
+function myfun1(a,b,c){
+  alert('3 arg function');
+}
+function myfun1(){
+  alert('0 args');
+}
+window.onload = myfun1('anil','pavan');
+</script>
+</pre>
+</body>
+
+</html>

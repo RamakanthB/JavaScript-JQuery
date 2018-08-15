@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>23 Tutorial</title>
+  <!--this operator -->
+</head>
+
+<body>
+  <p1> Use of this </p1>
+  </br>
+  <button onclick="myObject.myFun();">Click Object 1</button>
+  </br>
+  <button onclick="myObjectThis.myFun();">Click Object2</button>
+  </br>
+
+  </br>
+  <button onclick="modify();">modify</button>
+  </br>
+  <p1>After modifying the objects</p1>
+  </br>
+  <button onclick="myObject1.myFun();">Click Object 1</button>
+  </br>
+  <button onclick="myObjectThis1.myFun();">Click Object2</button>
+  </br>
+  <pre>
+  <script type="text/javascript">
+
+ var myObject={
+   'name1' :'kanth',
+   'name2' :'sanjay',
+   'myFun':function(){
+    alert(myObject.name1+' '+myObject.name2);
+   }
+ };
+
+ var myObjectThis={
+   'name1' :'anil',
+   'name2' :'pavan',
+   'myFun':function(){
+    alert(this.name1+' '+this.name2);
+   }
+ };
+
+var myObject1;
+  var myObjectThis1;
+
+function modify(){
+myObject1 =myObject;
+  myObject={};
+
+myObjectThis1=myObjectThis;
+  myObjectThis={};
+}
+
+
+</script>
+</pre>
+</body>
+
+</html>
