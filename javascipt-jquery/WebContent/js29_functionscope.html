@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>29 Tutorial</title>
+  <!--methods in an array-->
+</head>
+
+<body>
+  <p1>Scopes</p1>
+  </br>
+  <p1>Function Scope in JS </p1>
+  </br>
+  <button onclick=" mainfun();">Click me</button>
+  <pre>
+  <script type="text/javascript">
+
+   var a='kanth';
+   function calfun(){
+     var a='kanth in cal fun';
+   }
+   function calfun2(a){
+    document.writeln(a);
+   }
+   function mainfun(){
+     calfun();
+     document.writeln(a);  //it will npt take kanth in cal fun
+     calfun2('-kanth in calfun 2');
+
+
+   }
+
+
+</script>
+</pre>
+</body>
+
+</html>

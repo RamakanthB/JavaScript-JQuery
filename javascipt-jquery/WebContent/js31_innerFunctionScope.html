@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>31 Tutorial</title>
+  <!--methods in an array-->
+</head>
+
+<body>
+  <p1>Scopes</p1>
+  </br>
+  <p1>Global Scope in JS </p1>
+  </br>
+  <p2>Write functionlity works during compilation (RHS) All scopes are allocated during compilation </p2>
+  </br>
+  <p2> If u mention a variable without var keywork in a function it will create that variable in global scope during interpreation </p2>
+  </br>
+  <button onclick=" mainfun();">Click Here</button>
+  <pre>
+  <script type="text/javascript">
+
+   var a='kanth a';
+
+   function mainfun(){
+     var b=a;
+     document.writeln(b);
+    function calfun(){
+       var c=b;   //b already present in function scope(inner) during compilation
+       document.writeln(c);
+      var b='kanth b';  //remove this then above stmt will print global scope value
+     }
+   calfun();
+   }
+
+
+</script>
+</pre>
+</body>
+
+</html>
